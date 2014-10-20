@@ -57,7 +57,7 @@ angular.module("ang-drag-drop",[])
                     isDragHandleUsed = true;
                     dragHandleClass = attrs.dragHandleClass.trim() || "drag-handle";
 
-                    element.bind("mousedown", function (e) {
+                    element.bind("mousedown touchstart", function (e) {
                         dragTarget = e.target;
                     });
                 }
